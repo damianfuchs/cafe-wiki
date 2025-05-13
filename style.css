@@ -1,0 +1,253 @@
+* {
+  font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
+  margin: 0; /** Elimina el margen exterior por defecto */
+  padding: 0; /** Elimina el relleno interior por defecto */
+  box-sizing: border-box; /** Hace que el tamaño total del elemento incluya padding y borde */
+}
+
+html {
+  scroll-behavior: smooth; /** Hace que el desplazamiento en anclas sea suave */
+}
+
+body {
+  margin: 0; /** Elimina margen del body */
+  padding: 0; /** Elimina padding del body */
+  font-family: 'Poppins', sans-serif; /** Fuente principal del body */
+}
+
+nav {
+  width: 100%; /** Ocupa todo el ancho disponible */
+  height: 90px; /** Altura fija del menú de navegación */
+  background-color: rgb(36, 36, 36); /** Color de fondo oscuro */
+  display: flex; /** Usa Flexbox para distribuir los elementos del nav */
+  align-items: center; /** Centra los elementos verticalmente */
+  justify-content: space-between; /** Deja espacio entre los elementos del nav */
+  position: fixed; /** Fija el nav en la parte superior al hacer scroll */
+  z-index: 100; /** Pone el nav por encima de otros elementos */
+  box-shadow: 16px 5px 20px rgb(90, 90, 90); /** Sombra alrededor del nav */
+}
+
+nav .menu a {
+  text-decoration: none; /** Elimina el subrayado de los enlaces */
+  padding: 15px; /** Relleno interno de cada enlace */
+  margin: 15px; /** Espacio entre los enlaces */
+  font-size: 13px; /** Tamaño de letra pequeño */
+  color: white; /** Color del texto blanco */
+  letter-spacing: 2px; /** Espaciado entre letras */
+}
+
+nav .menu a:hover {
+  border-radius: 5px 5px 5px 5px; /** Bordes redondeados */
+  margin: 0; /** Reinicia el margen (aunque se sobrescribe más abajo) */
+  padding: 15px; /** Relleno al hacer hover */
+  margin: 15px; /** Espacio entre los enlaces (redundante con lo anterior) */
+  color: rgb(192, 170, 131); /** Cambia el color del texto al pasar el cursor */
+}
+
+nav .menu {
+  margin-right: 110px; /** Espacio a la derecha del menú */
+}
+
+.fondo {
+  height: 800px; /** Altura fija de la sección de fondo */
+  overflow: hidden; /** Oculta cualquier desbordamiento */
+}
+
+.fondo img {
+  width: 100%; /** Imagen ocupa todo el ancho del contenedor */
+  height: 100%; /** Imagen ocupa toda la altura del contenedor */
+  object-fit: cover; /** Cubre el área sin distorsión, recortando si es necesario */
+}
+
+.texto-superpuesto {
+  position: absolute; /** Posiciona el texto encima de la imagen */
+  top: 50%; /** Centrado vertical */
+  left: 50%; /** Centrado horizontal */
+  transform: translate(-50%, -50%); /** Ajusta para centrar exactamente */
+  color: white; /** Texto en color blanco */
+  text-align: center; /** Centra el texto */
+  font-size: 18px; /** Tamaño de fuente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /** Sombra del texto para mejor visibilidad */
+}
+
+.texto-superpuesto h1 {
+  letter-spacing: 6px; /** Espaciado entre letras del título */
+}
+
+.texto-superpuesto p {
+  letter-spacing: 2px; /** Espaciado entre letras del párrafo */
+  font-size: 16px; /** Tamaño del párrafo */
+}
+
+.fondo button {
+  font-family: 'Poppins', sans-serif; /** Fuente del botón */
+  position: absolute; /** Posición absoluta para ubicar el botón */
+  width: 160px; /** Ancho fijo */
+  height: 45px; /** Altura fija */
+  top: 70%; /** Posición vertical del botón */
+  left: 50%; /** Centrado horizontal */
+  transform: translateX(-50%); /** Ajuste fino para centrar */
+  text-align: center; /** Centra el texto del botón */
+  background-color: rgb(36, 36, 36); /** Color de fondo del botón */
+  color: white; /** Color del texto */
+  border: 0; /** Sin borde */
+  border-radius: 4px; /** Bordes redondeados */
+  font-size: 12px; /** Tamaño del texto */
+  letter-spacing: 3px;
+}
+
+.fondo button:hover {
+  border-radius: 4px; /** Mantiene los bordes redondeados al hacer hover */
+  color: rgb(192, 170, 131); /** Cambia el color del texto al pasar el cursor */
+  cursor: pointer; /** Cambia el cursor a una mano */
+}
+
+.acercade1 {
+  width: 100%; /** Ocupa todo el ancho */
+  height: 600px; /** Altura fija */
+  background-color: rgb(208, 212, 216); /** Fondo gris claro */
+}
+
+.acercade2 {
+  width: 100%; /** Todo el ancho */
+  height: 600px; /** Altura fija */
+  background-color: white; /** Fondo blanco */
+  display: flex; /** Flexbox para organizar contenido */
+  align-items: center; /** Centra verticalmente */
+  justify-content: center; /** Centra horizontalmente */
+  padding: 40px; /** Espaciado interno */
+  background-color: white; /** (repetido) Fondo blanco */
+  gap: 40px; /** Espacio entre elementos */
+  flex-direction: row-reverse; /** Invierte el orden (imagen a la derecha) */
+}
+
+.acercade3 {
+  width: 100%; /** Todo el ancho */
+  height: 600px; /** Altura fija */
+  background-color: rgb(208, 212, 216); /** Fondo gris claro */
+}
+
+.acercade1 {
+  display: flex; /** Usa flexbox */
+  align-items: center; /** Centra verticalmente */
+  justify-content: center; /** Centra horizontalmente */
+  padding: 40px; /** Relleno interno */
+  background-color: #e8ecf1; /** Fondo gris claro (más claro que antes) */
+  gap: 40px; /** Espacio entre elementos */
+}
+
+.acercade-img img {
+  width: 450px; /** Ancho fijo */
+  height: 450px; /** Alto fijo */
+  object-fit: cover; /** Ajusta la imagen sin distorsión */
+  border-radius: 5px; /** Bordes redondeados */
+  box-shadow: 16px 16px 20px grey; /** Sombra gris */
+  transition: transform 0.8s ease; /** Transición suave de 0.5 segundos UTILIZADA EN HOVER*/
+}
+
+.acercade-img img:hover {
+  transform: scale(1.08); /** Agranda la imagen al pasar el mouse */
+}
+
+.acercade-texto {
+  max-width: 600px; /** Ancho máximo */
+  color: #555; /** Color del texto */
+  text-align: center; /** Texto centrado */
+}
+
+.acercade-texto h2 {
+  font-family: 'Oswald', sans-serif; /** Fuente diferente para los títulos */
+  font-weight: 300; /** Peso de fuente liviano */
+  letter-spacing: 3px; /** Espaciado entre letras */
+  font-size: 35px; /** Tamaño de fuente */
+  color: #000; /** Color negro */
+}
+
+.acercade-texto p {
+  font-size: 16px; /** Tamaño del texto */
+  line-height: 1.6; /** Espaciado entre líneas */
+  margin-top: 20px; /** Margen superior */
+  color: #777; /** Color gris oscuro */
+}
+
+.contenedorservicios {
+  display: flex; /** Flexbox para organizar tarjetas */
+  justify-content: center; /** Centra horizontalmente las tarjetas */
+  align-items: center; /** Centra verticalmente */
+  flex-wrap: wrap; /** Permite que bajen a nueva línea si no caben */
+  gap: 40px; /** Espacio entre tarjetas */
+  max-width: 100%; /** Ocupa todo el ancho posible */
+  height: 600px; /** Altura del contenedor */
+  margin: 0 auto; /** Centrado horizontal */
+  padding: 20px; /** Relleno interno */
+  box-sizing: border-box; /** Incluye padding en el cálculo de dimensiones */
+}
+
+.tarjeta {
+  align-items: center;
+  width: 350px; /** Ancho fijo de cada tarjeta */
+  height: 450px; /** Alto fijo */
+  background-color: #f9f9f9;  /**Fondo claro */
+  border-radius: 10px; /** Bordes redondeados */
+  box-shadow: 16px 16px 20px grey; /** Sombra suave */
+  padding: 10px; /** Relleno interno */
+  box-sizing: border-box; /** Incluye relleno en el tamaño */
+  text-align: center; /** Texto centrado */
+  display: flex; /** Flexbox */
+  flex-direction: column; /** Elementos apilados verticalmente */
+  justify-content: space-between; /** Espaciado vertical entre elementos */
+  transition: transform 0.8s ease; /** Transición suave de 0.5 segundos UTILIZADA EN HOVER*/
+}
+
+.tarjeta img {
+  width: 100%; /** Imagen ocupa todo el ancho */
+  height: 60%; /** Imagen ocupa el 60% del alto */
+  object-fit: cover; /** Se ajusta sin distorsión */
+  border-radius: 6px; /** Bordes redondeados */
+  
+}
+
+.tarjeta:hover{
+  transform: scale(1.07);  /*Agranda la imagen al pasar el mouse */
+}
+
+.tarjeta h3 {
+  font-family: 'Poppins', sans-serif !important; /** Fuente para el título (sobrescribe lo anterior) */
+  font-weight: 300; /** Peso ligero */
+  margin: -2px 0; /** Margen arriba y abajo */
+  font-size: 1em; /** Tamaño de fuente base */
+  letter-spacing: 3px; /** Espaciado entre letras */
+}
+
+.tarjeta p {
+  font-size: 0.85em; /** Fuente más pequeña */
+  color: #555; /** Texto gris */
+  margin: -5px 0 5px 0; /** Reducido el margen superior para acercar el párrafo al título */
+  height: 55px; /** Altura fija para controlar el texto */
+  display: -webkit-box; /** Compatibilidad con line-clamp */
+  -webkit-line-clamp: 3; /** Limita el texto a 3 líneas */
+  -webkit-box-orient: vertical; /** Orientación vertical del box */
+  overflow: hidden; /** Oculta texto sobrante */
+  text-overflow: ellipsis; /** Muestra puntos suspensivos si se corta */
+}
+
+.tarjeta button {
+  width: 120px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif !important; /** Fuente para el título (sobrescribe lo anterior) */
+  letter-spacing: 3px; /** Espaciado entre letras */
+  padding: 6px 10px; /** Espaciado interno del botón */
+  text-align: center; /** Centra el texto */
+  background-color: rgb(36, 36, 36); /** Fondo oscuro */
+  color: white; /** Texto blanco */
+  border: none; /** Sin borde */
+  border-radius: 4px; /** Bordes redondeados */
+  cursor: pointer; /** Cursor tipo mano */
+  font-size: 12px; /** Tamaño de fuente */
+ 
+}
+
+.tarjeta button:hover {
+  color: rgb(192, 170, 131); /** Cambia color del texto */
+  cursor: pointer; /** Cursor tipo mano */
+}
