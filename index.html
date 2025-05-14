@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe DF</title>
+    <title>Café Wiki</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
@@ -27,27 +27,31 @@
                 <a href="#">INICIO</a>
                 <a href="#acerca">NOSOTROS</a>
                 <a href="#servicios">GUIAS Y CONSEJOS</a>
-                <a href="#">CONTACTO</a>
+                <a href="./modulos/contacto.html">CONTACTO</a>
                 
             </div>
         </nav>
     </header>
 
-    <div class="intro">
-        <div class="fondo">
-            <img src="img/fondo.jpg" alt="">
-            <div class="texto-superpuesto">
-                <h1>BIENVENIDO A LA WIKI DEL CAFÉ</h1>
-                <p>Bienvenido a La Wiki del Café, un espacio dedicado a los amantes del buen café. 
-                    Aquí vas a encontrar información útil, curiosa y apasionante sobre esta bebida 
-                    que acompaña nuestras mañanas y momentos especiales. Desde los distintos tipos de 
-                    granos y métodos de preparación, hasta datos históricos y consejos prácticos, esta 
-                    página fue creada para que puedas conocer más sobre el mundo del café y disfrutarlo 
-                    aún más en cada taza.</p>
+    <section id="inicio">
+        <div class="intro">
+            <div class="fondo">
+                <img src="img/fondo.jpg" alt="">
+                <div class="texto-superpuesto">
+                    <h1>BIENVENIDO A LA WIKI DEL CAFÉ</h1>
+                    <p>Un espacio dedicado a los amantes del café. Aquí vas a encontrar información útil, curiosa y apasionante sobre esta bebida
+                        que acompaña nuestras mañanas y momentos especiales. Desde los distintos tipos de
+                        granos y métodos de preparación, hasta datos históricos y consejos prácticos, esta
+                        página fue creada para que puedas conocer más sobre el mundo del café y disfrutarlo
+                        aún más en cada taza.</p>
+                </div>
+                <a href="#acerca">
+                    <button>NOSOTROS</button>
+                </a>
             </div>
-            <button>VER MÁS</button>
         </div>
-    </div>
+    </section>
+   
 
     <section id="acerca" style="scroll-margin-top: 80px;">
         <div class="acercade1">
@@ -78,7 +82,7 @@
             </div>
             <div class="acercade-texto">
                 <h2>NUESTRA VISIÓN</h2>
-                <p>Nuestra visión sobre el café se centra en promover la comprensión profunda del proceso que va desde la planta hasta la taza. Valoramos cada etapa: desde la selección de variedades botánicas y métodos de cultivo sostenible, hasta el tueste preciso y las técnicas de extracción que maximizan el perfil sensorial de cada grano. Apostamos por la formación continua y el acceso a información confiable que permita a los entusiastas y profesionales mejorar su práctica cafetera con base en ciencia y experiencia</p>
+                <p>Nuestra visión sobre el café se centra en promover la comprensión profunda del proceso que va desde la planta hasta la taza. Valoramos cada etapa: desde la selección de variedades botánicas y métodos de cultivo sostenible, hasta el tueste preciso y las técnicas de extracción que maximizan el perfil sensorial de cada grano. Apostamos por la formación continua y el acceso a información confiable que permita a los entusiastas y profesionales mejorar su práctica cafetera con base en ciencia y experiencia.</p>
                 <!-- Más contenido acá -->
             </div>
         </div>
@@ -88,21 +92,21 @@
     <section id="servicios">
         <div class="contenedorservicios">
             <div class="tarjeta">
-                <img src="img/coffe.jpg" alt="Servicio 1">
+                <img src="img/variedadcafe.jpg" alt="Servicio 1">
                 <h3>VARIEDADES DE CAFÉ</h3>
                 <p>Principales variedades de café y cómo cada una influye en el sabor y aroma de tu bebida favorita.</p>
                 <button>VER MÁS</button>
             </div>
             <div class="tarjeta">
-                <img src="img/cafe2.jpg" alt="Servicio 2">
-                <h3>TIPOS DE MOLIENDAS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora placeat hic, a sapiente, adipisci facere esse deleniti suscipit architecto</p>
+                <img src="img/fondocafe.jpg" alt="Servicio 2">
+                <h3>TOSTADO DE CAFÉ</h3>
+                <p>El tostado define el aroma y sabor del café, revelando sus características únicas.</p>
                 <button>VER MÁS</button>
             </div>
             <div class="tarjeta">
-                <img src="img/cafe3.jpg" alt="Servicio 3">
-                <h3>TOSTADO DE CAFÉ</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="img/moliendacafe.jpg" alt="Servicio 3">
+                <h3>TIPOS DE MOLIENDAS</h3>
+                <p>La molienda del café varía según el método de preparación. Su grosor influye en el sabor y la intensidad de la bebida.</p>
                 <button>VER MÁS</button>
             </div>
         </div>
@@ -130,10 +134,10 @@
                 </div>
             </div>
             <div class="footer-column">
-                <a href="#">INICIO</a>
-                <a href="#acerca">NOSOTROS</a>
-                <a href="#servicios">GUIAS Y CONSEJOS</a>
-                <a href="#">CONTACTO</a>
+                <a href="index.html#inicio">INICIO</a>
+                <a href="index.html#acerca">NOSOTROS</a>
+                <a href="index.html#servicios">GUIAS Y CONSEJOS</a>
+                <a href="./modulos/contacto.html">CONTACTO</a>
             </div>
         </div>
         <div class="footer-bottom">
