@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Café Wiki</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/style.css">
@@ -12,117 +12,154 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">
-                <a href="#">
-                   <img src="img/logo.png" alt="Logo" style="height: 80px; margin-left: 40px;">
-                </a>
+            <div class="nav-container">
+                <div class="logo" style="margin-left: 40px;">
+                    <a href="#" class="logoimg">
+                        <img src="img/logo.png" alt="Logo" style="height: 80px;">
+                    </a>
+                </div>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="menu">
+        
+            <div class="menu" id="nav-menu">
                 <a href="#">INICIO</a>
                 <a href="#acerca">NOSOTROS</a>
-                <a href="#servicios">GUIAS Y CONSEJOS</a>
+                <a href="#servicios">GUÍAS Y CONSEJOS</a>
                 <a href="./modulos/contacto.html">CONTACTO</a>
-                
             </div>
         </nav>
+
     </header>
 
-    <section id="inicio">
-        <div class="intro">
-            <div class="fondo">
-                <img src="img/fondo.jpg" alt="">
-                <div class="texto-superpuesto">
-                    <h1>BIENVENIDO A LA WIKI DEL CAFÉ</h1>
-                    <p>Un espacio dedicado a los amantes del café. Aquí vas a encontrar información útil, curiosa y apasionante sobre esta bebida
-                        que acompaña nuestras mañanas y momentos especiales. Desde los distintos tipos de
-                        granos y métodos de preparación, hasta datos históricos y consejos prácticos, esta
-                        página fue creada para que puedas conocer más sobre el mundo del café y disfrutarlo
-                        aún más en cada taza.</p>
+    <main>
+        <section id="inicio">
+            <div class="intro">
+                <div class="fondo">
+                    <img src="img/cafe3.jpg" alt="">
+                    <div class="texto-superpuesto">
+                        <h1>BIENVENIDO A LA WIKI DEL CAFÉ</h1>
+                        <p>Un espacio dedicado a los amantes del café. Aquí vas a encontrar información útil, curiosa y
+                            apasionante sobre esta bebida
+                            que acompaña nuestras mañanas y momentos especiales. Desde los distintos tipos de
+                            granos y métodos de preparación, hasta datos históricos y consejos prácticos, esta
+                            página fue creada para que puedas conocer más sobre el mundo del café y disfrutarlo
+                            aún más en cada taza.</p>
+                    </div>
+                    <a href="#acerca">
+                        <button>NOSOTROS</button>
+                    </a>
                 </div>
-                <a href="#acerca">
-                    <button>NOSOTROS</button>
-                </a>
             </div>
-        </div>
-    </section>
-   
-
-    <section id="acerca" style="scroll-margin-top: 80px;">
-        <div class="acercade1">
-            <div class="acercade-img">
-                <img src="img/cafelisto.jpg" alt="Café en manos">
+        </section>
+    
+        <section id="acerca" style="scroll-margin-top: 80px;">
+            <div class="acercade1">
+                <div class="acercade-img">
+                    <img src="img/cafelisto.jpg" alt="Café en manos">
+                </div>
+                <div class="acercade-texto">
+                    <h2>¿QUE BRINDAMOS?</h2>
+                    <p>Brindamos información clara y accesible sobre el fascinante mundo del café: desde su historia y
+                        variedades hasta los métodos de cultivo, tostado y preparación. Nuestro objetivo es compartir
+                        conocimientos que permitan apreciar la riqueza cultural, sensorial y social que rodea a esta bebida
+                        milenaria. Ya seas un aficionado, un curioso o un apasionado del café, aquí encontrarás contenido
+                        para aprender y disfrutar más de cada taza.</p>
+                    <!-- Más contenido acá -->
+                </div>
             </div>
-            <div class="acercade-texto">
-                <h2>¿QUE BRINDAMOS?</h2>
-                <p>Brindamos información clara y accesible sobre el fascinante mundo del café: desde su historia y variedades hasta los métodos de cultivo, tostado y preparación. Nuestro objetivo es compartir conocimientos que permitan apreciar la riqueza cultural, sensorial y social que rodea a esta bebida milenaria. Ya seas un aficionado, un curioso o un apasionado del café, aquí encontrarás contenido para aprender y disfrutar más de cada taza.</p>
-                <!-- Más contenido acá -->
+    
+            <div class="acercade2">
+                <div class="acercade-img">
+                    <img src="img/granocafe.jpg" alt="Café en manos">
+                </div>
+                <div class="acercade-texto">
+                    <h2>NUESTROS OBJETIVOS</h2>
+                    <p>Nuestro principal objetivo es difundir el conocimiento sobre el café en todas sus formas, promoviendo
+                        una mayor comprensión de su origen, proceso y valor cultural. Queremos despertar el interés por el
+                        café de calidad, fomentar el respeto por quienes lo cultivan y aportar contenido que eduque, inspire
+                        y conecte a las personas a través de esta bebida universal. Creemos que conocer el café es una forma
+                        de apreciar más lo que tomamos cada día.</p>
+                    <!-- Más contenido acá -->
+                </div>
             </div>
-        </div>
-
-        <div class="acercade2">
-            <div class="acercade-img">
-                <img src="img/granocafe.jpg" alt="Café en manos">
+    
+            <div class="acercade1">
+                <div class="acercade-img">
+                    <img src="img/molienda.jpg" alt="Café en manos">
+                </div>
+                <div class="acercade-texto">
+                    <h2>NUESTRA VISIÓN</h2>
+                    <p>Nuestra visión sobre el café se centra en promover la comprensión profunda del proceso que va desde
+                        la planta hasta la taza. Valoramos cada etapa: desde la selección de variedades botánicas y métodos
+                        de cultivo sostenible, hasta el tueste preciso y las técnicas de extracción que maximizan el perfil
+                        sensorial de cada grano. Apostamos por la formación continua y el acceso a información confiable que
+                        permita a los entusiastas y profesionales mejorar su práctica cafetera con base en ciencia y
+                        experiencia.</p>
+                    <!-- Más contenido acá -->
+                </div>
             </div>
-            <div class="acercade-texto">
-                <h2>NUESTROS OBJETIVOS</h2>
-                <p>Nuestro principal objetivo es difundir el conocimiento sobre el café en todas sus formas, promoviendo una mayor comprensión de su origen, proceso y valor cultural. Queremos despertar el interés por el café de calidad, fomentar el respeto por quienes lo cultivan y aportar contenido que eduque, inspire y conecte a las personas a través de esta bebida universal. Creemos que conocer el café es una forma de apreciar más lo que tomamos cada día.</p>
-                <!-- Más contenido acá -->
+        </section>
+    
+        <section id="servicios" style="scroll-margin-top: 80px;">
+            <div class="contenedorservicios">
+                <div class="tarjeta">
+                    <img src="img/variedadcafe.jpg" alt="Servicio 1">
+                    <h3>VARIEDADES DE CAFÉ</h3>
+                    <p>Principales variedades de café y cómo cada una influye en el sabor y aroma de tu bebida favorita.</p>
+                    <a href="./modulos/variedades.html">
+                        <button>VER MÁS</button>
+                    </a>
+    
+                </div>
+                <div class="tarjeta">
+                    <img src="img/fondocafe.jpg" alt="Servicio 2">
+                    <h3>TOSTADO DE CAFÉ</h3>
+                    <p>El tostado define el aroma y sabor del café, revelando sus características únicas.</p>
+                    <a href="./modulos/tostado.html">
+                        <button>VER MÁS</button>
+                    </a>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/moliendacafe.jpg" alt="Servicio 3">
+                    <h3>TIPOS DE MOLIENDAS</h3>
+                    <p>La molienda del café varía según el método de preparación. Su grosor influye en el sabor y la
+                        intensidad de la bebida.</p>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/coffe.jpg" alt="Servicio 3">
+                    <h3>MODOS DE PREPARACION</h3>
+                    <p>La elección del tipo de preparación influye en el sabor, la intensidad, el cuerpo y la experiencia
+                        final de la bebida.</p>
+                    <button>VER MÁS</button>
+                </div>
             </div>
-        </div>
-
-        <div class="acercade1">
-            <div class="acercade-img">
-                <img src="img/molienda.jpg" alt="Café en manos">
-            </div>
-            <div class="acercade-texto">
-                <h2>NUESTRA VISIÓN</h2>
-                <p>Nuestra visión sobre el café se centra en promover la comprensión profunda del proceso que va desde la planta hasta la taza. Valoramos cada etapa: desde la selección de variedades botánicas y métodos de cultivo sostenible, hasta el tueste preciso y las técnicas de extracción que maximizan el perfil sensorial de cada grano. Apostamos por la formación continua y el acceso a información confiable que permita a los entusiastas y profesionales mejorar su práctica cafetera con base en ciencia y experiencia.</p>
-                <!-- Más contenido acá -->
-            </div>
-        </div>
-    </section>
-
-
-    <section id="servicios">
-        <div class="contenedorservicios">
-            <div class="tarjeta">
-                <img src="img/variedadcafe.jpg" alt="Servicio 1">
-                <h3>VARIEDADES DE CAFÉ</h3>
-                <p>Principales variedades de café y cómo cada una influye en el sabor y aroma de tu bebida favorita.</p>
-                <button>VER MÁS</button>
-            </div>
-            <div class="tarjeta">
-                <img src="img/fondocafe.jpg" alt="Servicio 2">
-                <h3>TOSTADO DE CAFÉ</h3>
-                <p>El tostado define el aroma y sabor del café, revelando sus características únicas.</p>
-                <button>VER MÁS</button>
-            </div>
-            <div class="tarjeta">
-                <img src="img/moliendacafe.jpg" alt="Servicio 3">
-                <h3>TIPOS DE MOLIENDAS</h3>
-                <p>La molienda del café varía según el método de preparación. Su grosor influye en el sabor y la intensidad de la bebida.</p>
-                <button>VER MÁS</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    
 
 
     <!-- FOOTER -->
     <!-- ----------------------------------------------- -->
     <footer class="footer">
         <div class="footer-top">
-            <div class="footer-column">
+            <div class="footer-column ocultar-en-mobile"> <!-- Enlaces legales -->
                 <a href="#">Aviso Legal</a>
                 <a href="#">Política de Privacidad</a>
                 <a href="#">Política de Cookies</a>
                 <a href="#">Política de Calidad</a>
             </div>
+    
             <div class="footer-column">
                 <div class="footer-logo"></div>
                 <div class="social-icons">
@@ -133,13 +170,15 @@
                     <i class="fab fa-linkedin" style="cursor: pointer;"></i>
                 </div>
             </div>
-            <div class="footer-column">
+    
+            <div class="footer-column ocultar-en-mobile"> <!-- Enlaces de navegación -->
                 <a href="index.html#inicio">INICIO</a>
                 <a href="index.html#acerca">NOSOTROS</a>
-                <a href="index.html#servicios">GUIAS Y CONSEJOS</a>
+                <a href="index.html#servicios">GUÍAS Y CONSEJOS</a>
                 <a href="./modulos/contacto.html">CONTACTO</a>
             </div>
         </div>
+    
         <div class="footer-bottom">
             Damian Emmanuel Fuchs | Buenos Aires 452, Parana Entre Rios, Argentina |
             damianfuchs1999@hotmail.com | +54 343 551 5310
@@ -147,6 +186,28 @@
     </footer>
     <!-- ------------------------------------------------------- -->
     
-    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        // Ocultar menú cuando se hace clic en un enlace
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('#nav-menu a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('nav-menu').classList.remove('active');
+                });
+            });
+        });
+    </script>
+
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
 </body>
 </html>

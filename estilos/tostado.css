@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;               /* Elimina márgenes por defecto del navegador */
+    padding: 0;              /* Elimina el espacio interno por defecto */
+    height: 100%;            /* Hace que html y body ocupen el 100% del alto del viewport */
+    font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
+
+}
+
+body {
+    display: flex;           /* Convierte el body en un contenedor flexbox */
+    flex-direction: column; /* Apila los elementos hijos de forma vertical (columna) */
+    min-height: 100vh;       /* Asegura que el body tenga al menos el alto del viewport */
+}
+
+
+
+.contenedortostado {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Toma el alto total de la ventana */
+    background-color: rgb(232, 236, 241); /* Color de fondo opcional */
+    padding: 20px;
+    padding-top: 80px;
+}
+
+
+
+
+/* --- Responsive Navbar --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(36, 36, 36); /* mantené el fondo negro si ya estaba */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    .logo .logoimg{
+      margin-left: -40px;
+      padding: 0;
+      
+    }
+
+    .hamburger {
+      margin-left: auto;
+      margin-right: 25px;
+      margin-bottom: 17px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  footer p,
+  footer a {
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+
+  .footer-links-duplicados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ocultar-en-mobile {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}

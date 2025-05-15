@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Wiki</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <link rel="stylesheet" href="../estilos/tostado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    
+    <!-- NAV -->
+    <!-- ----------------------------------------------- -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" style="margin-left: 40px;">
+                    <a href="../index.html#inicio" class="logoimg">
+                        <img src="../img/logo.png" alt="Logo" style="height: 80px;">
+                    </a>
+                </div>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        
+            <div class="menu" id="nav-menu">
+                <a href="../index.html#inicio">INICIO</a>
+                <a href="../index.html#acerca">NOSOTROS</a>
+                <a href="../index.html#servicios">GUÍAS Y CONSEJOS</a>
+                <a href="../modulos/contacto.html">CONTACTO</a>
+            </div>
+        </nav>  
+    </header>
+    <!-- ----------------------------------------------- -->
+
+
+    <div class="contenedortostado">
+        <div class="informaciontostado">
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <!-- ----------------------------------------------- -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-column ocultar-en-mobile"> <!-- Enlaces legales -->
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Calidad</a>
+                </div>
+        
+                <div class="footer-column">
+                    <div class="footer-logo"></div>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook" style="cursor: pointer;"></i>
+                        <i class="fab fa-instagram" style="cursor: pointer;"></i>
+                        <i class="fab fa-youtube" style="cursor: pointer;"></i>
+                        <i class="fab fa-pinterest" style="cursor: pointer;"></i>
+                        <i class="fab fa-linkedin" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+        
+                <div class="footer-column ocultar-en-mobile"> <!-- Enlaces de navegación -->
+                    <a href="index.html#inicio">INICIO</a>
+                    <a href="index.html#acerca">NOSOTROS</a>
+                    <a href="index.html#servicios">GUÍAS Y CONSEJOS</a>
+                    <a href="../modulos/contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                Damian Emmanuel Fuchs | Buenos Aires 452, Parana Entre Rios, Argentina |
+                damianfuchs1999@hotmail.com | +54 343 551 5310
+            </div>
+        </footer>
+    <!-- ------------------------------------------------------- -->
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('nav-menu');
+                menu.classList.toggle('active');
+            }
+
+            // Ocultar menú cuando se hace clic en un enlace
+            document.addEventListener('DOMContentLoaded', function () {
+                const links = document.querySelectorAll('#nav-menu a');
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        document.getElementById('nav-menu').classList.remove('active');
+                    });
+                });
+            });
+        </script>
+
+        
+</body>
+</html>

@@ -175,12 +175,18 @@ nav .menu {
   justify-content: center; /** Centra horizontalmente las tarjetas */
   align-items: center; /** Centra verticalmente */
   flex-wrap: wrap; /** Permite que bajen a nueva línea si no caben */
+  
+  min-height: 600px;
+  height: auto;
+
+
   gap: 40px; /** Espacio entre tarjetas */
   max-width: 100%; /** Ocupa todo el ancho posible */
-  height: 600px; /** Altura del contenedor */
+  
   margin: 0 auto; /** Centrado horizontal */
   padding: 20px; /** Relleno interno */
   box-sizing: border-box; /** Incluye padding en el cálculo de dimensiones */
+
 }
 
 .tarjeta {
@@ -190,6 +196,7 @@ nav .menu {
   background-color: #f9f9f9;  /**Fondo claro */
   border-radius: 10px; /** Bordes redondeados */
   box-shadow: 16px 16px 20px grey; /** Sombra suave */
+  
   padding: 10px; /** Relleno interno */
   box-sizing: border-box; /** Incluye relleno en el tamaño */
   text-align: center; /** Texto centrado */
@@ -252,4 +259,275 @@ nav .menu {
 .tarjeta button:hover {
   color: black; /** Cambia color del texto */
   cursor: pointer; /** Cursor tipo mano */
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .contenedorservicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+
+  .tarjeta img {
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+/** RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+
+  .tarjeta h3 {
+    font-size: 18px;
+  }
+
+  .tarjeta p {
+    font-size: 14px;
+  }
+
+  .tarjeta button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+  .contenedorservicios {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tarjeta {
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .intro{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-superpuesto h1{
+    margin-bottom: 25px;
+  }
+
+  .texto-superpuesto{
+    width: 90%;
+    margin-top: -40px;
+  }
+
+  .intro button{
+    margin-top: 20px;
+  }
+  .acercade1{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .acercade .acercade-img{
+
+    align-items: center;
+  }
+
+  .acercade-img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .acercade2{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .acercade3{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+
+
+/* --- Responsive Navbar --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(36, 36, 36); /* mantené el fondo negro si ya estaba */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    .logo .logoimg{
+      margin-left: -40px;
+      padding: 0;
+      
+    }
+    .hamburger {
+      margin-left: auto;
+      margin-right: 25px;
+      margin-bottom: 17px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+
+  
+
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  footer p,
+  footer a {
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+
+  .footer-links-duplicados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ocultar-en-mobile {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
