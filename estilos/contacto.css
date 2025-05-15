@@ -1,41 +1,105 @@
 html, body {
-    margin: 0;               /* Elimina márgenes por defecto del navegador */
-    padding: 0;              /* Elimina el espacio interno por defecto */
-    height: 100%;            /* Hace que html y body ocupen el 100% del alto del viewport */
-    font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
+  margin: 0;               /* Elimina márgenes por defecto del navegador */
+  padding: 0;              /* Elimina el espacio interno por defecto */
+  height: 100%;            /* Hace que html y body ocupen el 100% del alto del viewport */
+  font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
 
 }
 
 body {
-    display: flex;           /* Convierte el body en un contenedor flexbox */
-    flex-direction: column; /* Apila los elementos hijos de forma vertical (columna) */
-    min-height: 100vh;       /* Asegura que el body tenga al menos el alto del viewport */
+  display: flex;           /* Convierte el body en un contenedor flexbox */
+  flex-direction: column; /* Apila los elementos hijos de forma vertical (columna) */
+  min-height: 100vh;       /* Asegura que el body tenga al menos el alto del viewport */
 }
 
 
 
 .contenedorcontacto {
-    display: flex;
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;      /* Centra verticalmente */
-    height: 100vh;            /* Toma el alto total de la ventana */
-    background-color: rgb(232, 236, 241); /* Color de fondo opcional */
-    padding: 20px;
-    padding-top: 80px;
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  height: 100vh;            /* Toma el alto total de la ventana */
+  background-color: rgb(232, 236, 241); /* Color de fondo opcional */
+  padding: 20px;
+  padding-top: 80px;
+  
 }
+
+.contacto-form {
+  width: 100%;
+  max-width: 400px;         /* Controla qué tan ancho es el formulario */
+  background-color: rgb(232, 236, 241);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 16px 16px 20px grey;
+  text-align: center;
+  
+}
+
+.contacto-form h3 {
+  align-items: center;
+  text-align: center;
+  font-weight: 300; /** Peso ligero */
+  letter-spacing: 3px; /** Espaciado entre letras */
+  font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: rgb(192, 170, 131);     /* Azul, por ejemplo */
+  outline: none;             /* Quita el borde por defecto del navegador */
+  box-shadow: 0 0 10px rgb(192, 170, 131);  /* Efecto de resplandor opcional */
+}
+
+
+.contacto-form button {
+  font-family: 'Poppins', sans-serif; /** Fuente del botón */
+  width: 160px; /** Ancho fijo */
+  height: 45px; /** Altura fija */
+  top: 70%; /** Posición vertical del botón */
+  left: 50%; /** Centrado horizontal */
+  text-align: center; /** Centra el texto del botón */
+  align-items: center;
+  background-color: rgb(36, 36, 36); /** Color de fondo del botón */
+  color: white; /** Color del texto */
+  border: 0; /** Sin borde */
+  border-radius: 4px; /** Bordes redondeados */
+  font-size: 12px; /** Tamaño del texto */
+  letter-spacing: 3px;
+}
+
+.contacto-form button:hover{
+  color: rgb(192, 170, 131); /** Color del texto */
+  cursor: pointer;
+}
+
 
 
 
 
 /* --- Responsive Navbar --- */
 .hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: white;
-    margin-right: 20px;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
