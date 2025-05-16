@@ -15,13 +15,169 @@ body {
 
 
 .contenedortostado {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 80px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(232, 236, 241);
+  /* quitado height y min-height */
+}
+
+.tipostostado {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(232, 236, 241);
+  
+}
+
+.titulo{
+  margin-top: 20px;
+  /* Subrayado*/
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* alto del subrayado */
+  padding-bottom: 5px;
+  /* ------------------*/
+}
+
+.titulotostado{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px; /* o 0.1em */
+}
+
+
+.contenedorvariedades h2 {
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contenedorimagenes{
+  display: flex;
+  flex-direction: row;
+}
+.contenedorimagenes img{
+  
+}
+
+.lineatostado {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(36, 36, 36);
+    margin: 40px auto;
+    box-shadow: 0 5px 50px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* SECCIÓN DE INFORMACIÓN PRINCIPAL */
+.informacion {
     display: flex;
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;      /* Centra verticalmente */
-    height: 100vh;            /* Toma el alto total de la ventana */
-    background-color: rgb(232, 236, 241); /* Color de fondo opcional */
-    padding: 20px;
-    padding-top: 80px;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.informacion p {
+    text-align: justify;
+}
+
+.carrusel {
+  max-width: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+
+.informacion img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 16px 5px 20px rgb(90, 90, 90);
+    transition: transform 0.8s ease;
+}
+
+.titulotipotostado{
+  font-size: 28px;
+}
+
+
+.informacion img:hover {
+    transform: scale(1.04);
+}
+
+.container-fluid{
+  padding: 0;
+  border-radius: 5px ;
+  
+}
+
+
+.tarjetas-tostado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tarjetatostado h3 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  letter-spacing: 3px; /* o 0.1em */
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.tarjetatostado p {
+    margin-bottom: 5px; /* o 0 si querés pegarlo más */
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.tarjetatostado {
+  background-color: rgb(232, 236, 241);
+  border-radius: 10px;
+
+  box-shadow: 16px 5px 20px rgb(90, 90, 90);
+  padding: 20px;
+  /* Altura automática */
+  height: auto;
+  /* Opcional: ancho máximo */
+  max-width: 350px;
+  margin: 10px auto;
+}
+
+.tarjetatostado img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+   /* empuja la imagen hacia abajo */
+  display: block;
+  margin-top: 15px;
 }
 
 
@@ -44,6 +200,24 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+        margin: 0 auto 20px;
+    }
+
+    .titulo {
+      margin-top: 20px;
+      /* Subrayado*/
+      display: inline-block;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+      background-position: 0 60%;
+      background-repeat: no-repeat;
+      background-size: 100% 3px;
+      /* alto del subrayado */
+      padding-bottom: 5px;
+      /* ------------------*/
     }
 
     .menu {
@@ -87,6 +261,26 @@ body {
       align-items: center;
       width: 100%;
   }
+
+  .carrusel {
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .informacion img {
+    width: 100%;
+  }
+
+  .informacion{
+    margin-top: 10px;
+  }
+
+  .tarjetatostado {
+    width: 100%;
+    max-width: none;
+  }
+
 }
 
 @media (max-width: 768px) {

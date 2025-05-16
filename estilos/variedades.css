@@ -26,6 +26,14 @@ body {
 
 .titulo{
   margin-top: 40px;
+  /* Subrayado*/
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  background-position: 0 85%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* alto del subrayado */
+  /* ------------------*/
+  
 }
 
 .contenedorvariedades h2 {
@@ -109,7 +117,7 @@ body {
 .informaciontipocafe img {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 500px;
     object-fit: cover;
     margin: 10px 0;
     border-radius: 5px;
@@ -117,6 +125,11 @@ body {
     transition: transform 0.8s ease;
 }
 
+.titulovariedad{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: -2px; /* o 0.1em */
+}
 
 
 .informaciontipocafe img:hover {
@@ -143,6 +156,17 @@ body {
         font-size: 24px;
         margin: 0 auto 20px;
     }
+
+  .titulo{
+    margin-top: 40px;
+    /* Subrayado*/
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    background-position: 0 75%;
+    background-repeat: no-repeat;
+    background-size: 100% 3px; /* alto del subrayado */
+    /* ------------------*/
+  }
 
     .informacion {
         flex-direction: column;

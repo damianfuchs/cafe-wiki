@@ -141,7 +141,11 @@ nav .menu {
   height: 450px; /** Alto fijo */
   object-fit: cover; /** Ajusta la imagen sin distorsión */
   border-radius: 5px; /** Bordes redondeados */
-  box-shadow: 16px 16px 20px grey; /** Sombra gris */
+    box-shadow:
+  -16px  16px 20px rgba(0, 0, 0, 0.2), /* izquierda-abajo */
+   16px  16px 20px rgba(0, 0, 0, 0.2), /* derecha-abajo */
+  -16px -16px 20px rgba(0, 0, 0, 0.2), /* izquierda-arriba */
+   16px -16px 20px rgba(0, 0, 0, 0.2); /* derecha-arriba */
   transition: transform 0.8s ease; /** Transición suave de 0.5 segundos UTILIZADA EN HOVER*/
 }
 
