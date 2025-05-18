@@ -1,0 +1,368 @@
+html, body {
+    margin: 0;               /* Elimina márgenes por defecto del navegador */
+    padding: 0;              /* Elimina el espacio interno por defecto */
+    height: 100%;            /* Hace que html y body ocupen el 100% del alto del viewport */
+    font-family: 'Poppins', sans-serif; /** Aplica la fuente 'Poppins' a todos los elementos */
+
+}
+
+body {
+    display: flex;           /* Convierte el body en un contenedor flexbox */
+    flex-direction: column; /* Apila los elementos hijos de forma vertical (columna) */
+    min-height: 100vh;       /* Asegura que el body tenga al menos el alto del viewport */
+}
+
+
+
+.contenedorhistoria{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 80px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(232, 236, 241);
+  /* quitado height y min-height */
+}
+
+.tipostostado {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(232, 236, 241);
+  
+}
+
+.titulo{
+  margin-top: 20px;
+  /* Subrayado*/
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* alto del subrayado */
+  padding-bottom: 5px;
+  /* ------------------*/
+}
+
+.titulotostado{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px; /* o 0.1em */
+}
+
+
+.contenedorvariedades h2 {
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contenedorimagenes{
+  display: flex;
+  flex-direction: row;
+}
+.contenedorimagenes img{
+  
+}
+
+.lineatostado {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(36, 36, 36);
+    margin: 40px auto;
+    box-shadow: 0 5px 50px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* SECCIÓN DE INFORMACIÓN PRINCIPAL */
+
+.titulohistoria{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px; /* o 0.1em */
+}
+
+
+.contenedorhistoria2{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+ 
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(232, 236, 241);
+  /* quitado height y min-height */
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.informacion p {
+    text-align: justify;
+}
+
+
+.informacion img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 16px 5px 20px rgb(90, 90, 90);
+    transition: transform 0.8s ease;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* INFORMACION PASTOR */
+.informacionpastor {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    margin-bottom: 20px;    
+    margin-top: 10px;
+}
+
+.informacionpastor p {
+    text-align: justify;
+}
+
+
+.informacionpastor img {
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 16px 5px 20px rgb(90, 90, 90);
+    transition: transform 0.8s ease;
+    margin-bottom: 15px;
+}
+
+.contenedorhistoria2 h2{
+    text-align: center;
+
+}
+
+
+/* ------------------------- */
+
+
+
+
+.titulotipotostado{
+  font-size: 28px;
+}
+
+
+.informacion img:hover {
+    transform: scale(1.04);
+}
+
+.container-fluid{
+  padding: 0;
+  border-radius: 5px ;
+  
+}
+
+
+
+
+
+
+/* --- Responsive Navbar --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+        margin: 0 auto 20px;
+    }
+
+    .titulo {
+      margin-top: 20px;
+      /* Subrayado*/
+      display: inline-block;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+      background-position: 0 60%;
+      background-repeat: no-repeat;
+      background-size: 100% 3px;
+      /* alto del subrayado */
+      padding-bottom: 15px;
+      /* ------------------*/
+    }
+
+    .titulohistoria{
+        
+        letter-spacing: 2px;
+    }
+
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(36, 36, 36); /* mantené el fondo negro si ya estaba */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    .logo .logoimg{
+      margin-left: -40px;
+      padding: 0;
+      
+    }
+
+    .hamburger {
+      margin-left: auto;
+      margin-right: 25px;
+      margin-bottom: 17px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+
+  .carrusel {
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .informacion img {
+    width: 100%;
+  }
+
+  .informacion{
+    margin-top: 10px;
+  }
+
+  .tarjetatostado {
+    width: 100%;
+    max-width: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  footer p,
+  footer a {
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+
+  .footer-links-duplicados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ocultar-en-mobile {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}

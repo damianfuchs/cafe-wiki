@@ -192,6 +192,24 @@ nav .menu {
 
 }
 
+.btnhistoriacafe{
+  width: 180px;
+  height: 40px;
+  margin-top: 25px;
+  background-color: rgb(36, 36, 36); /** Color de fondo del botón */
+  color: white; /** Color del texto */
+  border-radius: 4px; /** Mantiene los bordes redondeados al hacer hover */
+  border: 0; /** Sin borde */
+  font-size: 12px; /** Tamaño del texto */
+  letter-spacing: 3px;
+}
+
+.btnhistoriacafe:hover{
+  background-color: rgb(36, 36, 36); /** Color de fondo del botón */
+  color: rgb(192, 170, 131); /** Cambia el color del texto al pasar el cursor */
+  cursor: pointer; /** Cambia el cursor a una mano */
+}
+
 .tarjeta {
   align-items: center;
   width: 350px; /** Ancho fijo de cada tarjeta */
