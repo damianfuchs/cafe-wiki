@@ -392,6 +392,11 @@ nav .menu {
     align-items: center;
     
   }
+
+  .tarjeta p{
+    height: 70px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -450,6 +455,9 @@ nav .menu {
     height: 100%;
   }
 
+  .tarjeta {
+  overflow: visible; /* importante para mostrar contenido completo */
+  }
 
   
 }
