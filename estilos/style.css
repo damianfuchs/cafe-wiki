@@ -294,7 +294,7 @@ nav .menu {
   }
 
   .texto-superpuesto {
-    top: 75%;
+    top: 100%;
   }
 
   .tarjeta {
@@ -387,6 +387,10 @@ nav .menu {
 
   .texto-superpuesto h1{
     margin-bottom: 25px;
+  }
+
+  .texto-superpuesto h1{
+    font-size: 30px;
   }
 
   .texto-superpuesto{
