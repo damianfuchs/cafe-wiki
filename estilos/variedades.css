@@ -149,66 +149,62 @@ body {
     margin-top: 10px;
 }
 
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .contenedorvariedades h2,
+  .contenedorvariedades h2,
     .titulo h2 {
-        font-size: 24px;
-        margin: 0 auto 20px;
+      font-size: 24px;
+      margin: 0 auto 20px;
     }
-
-  .titulo{
-    margin-top: 40px;
-    /* Subrayado*/
-    display: inline-block;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
-    background-position: 0 75%;
-    background-repeat: no-repeat;
-    background-size: 100% 3px; /* alto del subrayado */
-    /* ------------------*/
-  }
-
+  
+    .titulo {
+      margin-top: 40px;
+      /* Subrayado*/
+      display: inline-block;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+      background-position: 0 75%;
+      background-repeat: no-repeat;
+      background-size: 100% 3px;
+      /* alto del subrayado */
+      /* ------------------*/
+    }
+  
     .informacion {
-        flex-direction: column;
-        width: 95%;
+      flex-direction: column;
+      width: 95%;
     }
-
+  
     .informacion img {
-        width: 90%;
-        height: auto;
+      width: 90%;
+      height: auto;
     }
-
+  
     .linea {
-        width: 90%;
+      width: 90%;
     }
-
+  
     .informaciontipocafe img {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px 10px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 10px;
     }
-
+  
     .footer-column {
-        margin-bottom: 10px;
-        text-align: center;
+      margin-bottom: 10px;
+      text-align: center;
     }
-
+  
     .footer-logo {
-        margin: 0 auto 10px;
+      margin: 0 auto 10px;
     }
-
+  
     .ocultar-en-mobile {
-        display: none !important;
+      display: none !important;
     }
 }
 

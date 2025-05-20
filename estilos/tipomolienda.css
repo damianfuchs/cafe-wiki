@@ -37,7 +37,7 @@ body {
   padding: 20px;
   width: 100%;
   background-color: rgb(232, 236, 241);
-  
+  padding-bottom: 100px;  
 }
 
 .titulo{
@@ -71,17 +71,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.contenedorimagenes img{
-  
-}
 
-.lineatostado {
-    width: 70%;
-    height: 1px;
-    background-color: rgb(36, 36, 36);
-    margin: 40px auto;
-    box-shadow: 0 5px 50px 5px rgba(0, 0, 0, 0.35);
-}
 
 /* SECCIÓN DE INFORMACIÓN PRINCIPAL */
 .informacion {
@@ -118,11 +108,6 @@ body {
     transition: transform 0.8s ease;
 }
 
-.titulotipotostado{
-  font-size: 28px;
-}
-
-
 .informacion img:hover {
     transform: scale(1.04);
 }
@@ -132,7 +117,6 @@ body {
   border-radius: 5px ;
   
 }
-
 
 .tarjetas-moliendas {
   display: flex;
@@ -185,11 +169,6 @@ body {
   /* Esto empuja la imagen hacia abajo */
   margin-top: auto;
 }
-
-
-
-
-
 
 /* --- Responsive Navbar --- */
 .hamburger {

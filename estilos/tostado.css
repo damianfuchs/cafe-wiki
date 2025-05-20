@@ -12,8 +12,6 @@ body {
     min-height: 100vh;       /* Asegura que el body tenga al menos el alto del viewport */
 }
 
-
-
 .contenedortostado {
   flex-grow: 1;
   display: flex;
@@ -33,11 +31,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
   padding: 20px;
   width: 100%;
   background-color: rgb(232, 236, 241);
-  
+  padding-bottom: 100px;
 }
 
 .titulo{
@@ -58,21 +55,9 @@ body {
   letter-spacing: 5px; /* o 0.1em */
 }
 
-
-.contenedorvariedades h2 {
-    text-align: center;
-    letter-spacing: 6px;
-    font-weight: 300;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
 .contenedorimagenes{
   display: flex;
   flex-direction: row;
-}
-.contenedorimagenes img{
-  
 }
 
 .lineatostado {
@@ -122,7 +107,6 @@ body {
   font-size: 28px;
 }
 
-
 .informacion img:hover {
     transform: scale(1.04);
 }
@@ -132,7 +116,6 @@ body {
   border-radius: 5px ;
   
 }
-
 
 .tarjetas-tostado {
   display: flex;
@@ -179,9 +162,6 @@ body {
   display: block;
   margin-top: 15px;
 }
-
-
-
 
 /* --- Responsive Navbar --- */
 .hamburger {

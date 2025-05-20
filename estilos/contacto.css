@@ -22,7 +22,6 @@ body {
   background-color: rgb(232, 236, 241); /* Color de fondo opcional */
   padding: 20px;
   padding-top: 80px;
-  
 }
 
 .contacto-form {
@@ -33,7 +32,7 @@ body {
   border-radius: 10px;
   box-shadow: 16px 16px 20px grey;
   text-align: center;
-  
+  margin-top: 20px;
 }
 
 .contacto-form h3 {
