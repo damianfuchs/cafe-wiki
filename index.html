@@ -20,9 +20,6 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#6f4e37">
 
 
 </head>
@@ -221,22 +218,6 @@
                 });
             });
         });
-    </script>
-
-    <script>
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
-    </script>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                    .then(reg => console.log('SW registrado', reg))
-                    .catch(err => console.log('Error SW', err));
-            });
-        }
     </script>
 
 
