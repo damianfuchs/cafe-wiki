@@ -294,10 +294,9 @@ nav .menu {
   }
 
   .texto-superpuesto {
-    top: 35%;
-    padding-top: 90px;
+    top: 65%;
     width: 100%;
-    margin-top: 140px;
+   
   }
 
   .tarjeta {
@@ -416,6 +415,7 @@ nav .menu {
   }
 
   .texto-superpuesto{
+    top: 65%;
     padding-top: 90px;
     width: 100%;
     margin-top: 140px;
